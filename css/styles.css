@@ -107,7 +107,6 @@ nav{
     }
 
     /* midbanner */
-
     .midbanner {
         color: rgb(0, 0, 0, 0.6);
         font-family: Arial, Helvetica, sans-serif;
@@ -115,18 +114,14 @@ nav{
         justify-content: space-between;
         width: 100%;
     }
-    
+
     .midbanner_left {
         width: 60%;
         max-width: 60%;
         display: inline-block;
-        padding: 32px 0px 32px 24px; /* top right bottom left*/
+        margin: 32px 24px 32px 24px; /* top right bottom left*/
     }
 
-    .midbanner img{
-        max-width: 100%;
-    }
-    
     .midbanner_right {
         width: 40%;
         max-width: 35%;
@@ -134,27 +129,55 @@ nav{
         border-left: 1px solid rgb(0, 0, 0, 0.2);
     }
 
-    .orientation, .campus, .guest{
+    .midbanner_left img {
+        /* max-width: 100%; */
+        width: 100%;
+    }
+
+    /* .midbanner_left h1, .midbanner_left p {
+        padding-left: 24px;
+    } */
+
+    .midbanner_left h1 {
+        font-size: xx-large;
+    }
+
+    .orientation, .campus, .guest {
         display: flex;
-        word-break: break-all;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        word-break:break-all;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.2);
     }
 
-    .orientation:hover, .campus:hover, .guest:hover{
-        background-color: rgba(0, 0, 0, 0.1);
+    .orientation:hover, .campus:hover, .guest:hover {
         cursor: pointer;
+        background-color: rgb(0, 0, 0, 0.1);
     }
 
-    .orientation img, .campus img, .guest img{
+    .orientation img, .campus img, .guest img {
         max-width: 35%;
         max-height: auto;
         object-fit: cover;
         padding: 16px;
     }
 
-    .readmore{
-        color: rgba(27, 3, 104, 0.7);
+    .orientation_date, .our_campus, .guest_lecture {
+        width: 65%;
+        padding: 8px;
     }
+
+    .orientation_date h2, .our_campus h2, .guest_lecture h2 {
+        font-size: large;
+    }
+
+    .orientation_date p, .our_campus p, .guest_lecture p {
+        font-size: medium;
+    }
+
+    .read_more {
+        color: rgba(16, 18, 151, 0.8);
+        text-decoration: none;
+    }
+
     /* bottom banner */
 
 /* main section - END */
